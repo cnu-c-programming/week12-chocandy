@@ -15,7 +15,7 @@ void config_parser(Config* config_ptr) {
     fscanf(fp, "InputFileName=%s\n", config_ptr->InputFileName);
     fscanf(fp, "Options=%d\n", &config_ptr->Options);
     fscanf(fp, "SectionName=%s\n", config_ptr->SectionName);
-    fscanf(fp, "Address=%llu\n", &config_ptr->Address);
+    fscanf(fp, "Address=%lx\n", &config_ptr->Address);
 
     fclose(fp);
 }
